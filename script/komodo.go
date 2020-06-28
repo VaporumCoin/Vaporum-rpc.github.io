@@ -91,7 +91,7 @@ func open(path string) io.Writer {
 }
 
 func run(args ...string) string {
-	out, err := exec.Command("/usr/bin/zcash-cli", args...).CombinedOutput()
+	out, err := exec.Command("/home/lightspeed393/komodo/src/komodo-cli", args...).CombinedOutput()
 	if err != nil {
 		panic(err)
 	}
