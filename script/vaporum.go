@@ -91,7 +91,7 @@ func open(path string) io.Writer {
 }
 
 func run(args ...string) string {
-	out, err := exec.Command("/home/lightspeed393/vaporum/src/vaporum-cli", args...).CombinedOutput()
+	out, err := exec.Command("/home/vaporum/src/vaporum-cli", args...).CombinedOutput()
 	if err != nil {
 		panic(err)
 	}
